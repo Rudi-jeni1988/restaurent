@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Lato", sans-serif;
+
+}
+
+.navbar>.container{
+    display: block !important;
+}
+.navbar-brand{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 72px !important;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.3s, padding 0.3s;
+}
+
+
+.navbar.scrolled {
+    background-color: #243230 
+}
+
+.navbar-brand.scrolled {
+    display: none;
+}
+.slider-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../image/banner.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-content {
+    z-index: 1;
+    font-family: 'Felix Titling';
+    padding-top: 200px;
+}
+.slider-content h1{
+    width: 700px;
+    font-size: 48px;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+    line-height: 70px;
+}
+@font-face {
+    font-family: 'Felix Titling';
+    src: url('../Fonts/FELIXTI.TTF') format('truetype');
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.02);
+    border-bottom: 1px solid #8c8c8c;
+}
+
+.navbar-nav .nav-link {
+    color: #FFFEF2 !important;
+    font-weight: 400;
+    margin: 0 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link.active {
+    border-bottom: 3px solid #0EE3C4;
+}
+.navbar-nav .nav-link:hover {
+    border-bottom: 3px solid #0EE3C4;
+}
+.fixed-top{
+    padding-bottom: 0 !important;
+}
+.reserve-button {
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.reserve-table {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    writing-mode: vertical-rl;
+    text-orientation: revert-layer;
+    background-color: #243230CC;
+    padding: 30px 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 1px solid #FFFEF2;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: rotate(180deg);
+}
+.reserve-table a, .reserve-table a:hover{
+    text-decoration: none;
+    color: #FFFEF2;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+
+}
+.btn.reserve-button, .btn.reserve-button:hover{
+    background: #243230;
+    color: #FFFEF2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+
+}
+/*About*/
+.about-section{
+    background: #FFFEF2;
+    padding: 100px 0 0 0;
+}
+.about-section h3{
+    font-family: 'Felix Titling';
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.btn.read-more{
+    background: #243230;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #fffef2;
+    letter-spacing: 2px;
+    border: 1px solid #243230;
+}
+.btn.read-more:hover{
+    background: #fff;
+    color: #243230;
+    border: 1px solid #243230;
+}
+.abt-1{
+    width: 350px;
+    height: 380px;
+    position: relative;
+    left: 185px;
+    top: 0;
+    z-index: 1;
+}
+.abt-2{
+    width: 350px;
+    height: 380px;
+    position: relative;
+    left: 0;
+    top: -180px;
+}
+/* Promotion Section */
+.promotion-section {
+    background: #243230;
+    padding: 70px 0;
+    color: #fff;
+}
+.promotion-section h3{
+    font-family: 'Felix Titling';
+    font-size: 40px;
+    font-weight: 400;
+    width: 530px;
+    margin: 0 auto 30px;
+    letter-spacing: 5px;
+}
+.promotion-section h5 {
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 6px;
+}
+.slider {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.slider .card {
+    background: transparent;
+    border: none;
+    margin: 0 10px;
+}
+.slider .card .img {
+    width: 100%;
+    height: auto;
+}
+.slider .card .img img {
+    width: 100%;
+    height: auto;
+}
+.product {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    position: relative;
+    top: -40px;
+    text-align: center;
+}
+.product .title {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-family: 'Felix Titling';
+    color: #000;
+}
+.product p{
+    color: #000;
+}
+.product .btn button {
+    background: #243230;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+.ms-md-n5{
+    margin-left: -180px;
+}
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    transform: translateY(-50%);
+}
+.owl-nav .owl-prev { left: -30px; }
+.owl-nav .owl-next { right: -30px; }
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+.owl-nav i{
+    font-size: 30px;
+    font-family: 'FontAwesome';
+}
+
+/* Event Section */
+.event-section {
+    background: #fff;
+    padding: 70px 0;
+    color: #000;
+
+}
+.event-section h3{
+    font-family: 'Felix Titling';
+    font-size: 40px;
+    font-weight: 400;
+    width: 530px;
+    margin: 0 auto 30px;
+    letter-spacing: 5px;
+    color: #000 !important;
+}
+.product h6{
+    letter-spacing: 6px;
+    font-size: 14px;
+}
+.event-section .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: 'Felix Titling';
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+.event-section .product{
+    border-radius: 0;
+    top: 0;
+}
+.event-section .card{
+    border: none;
+    box-shadow: 1px 1px 10px #ccc;
+}
+.event-section .event-btn {
+    background: #243230;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    
+    
+}
+.event-section .event-btn a{
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    width: 70%;
+}
+.event-section .event-btn i{
+    color: #fff;
+    text-decoration: none;
+    text-align: right;
+}
+.event-section .read-more{
+    border: 1px solid #243230;
+}
+.event-section .read-more:hover{
+    border: 1px solid #243230;
+    background: #fff;
+    color: #243230;
+}
+/*Gallery*/
+.gallery-section input{
+    display: none;
+}
+
+.gallery-section .tag{
+    margin: 1.5em 0px;
+    padding: 5px 25px;
+    border-radius: 0;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+.gallery-section img{
+    max-width: 300px;
+    width: 300px;
+    height: 300px;
+    transition: all .4s ease-in-out;
+}
+.gallery-section img.float-end{
+    max-width: 150px;
+    width: 150px;
+    height: 100px;
+}
+/*filter CSS */
+
+ #drunch:checked ~ .images > img:not([class*='drunch']),
+ #interior:checked ~ .images > img:not([class*='interior']),
+ #iftar:checked ~ .images > img:not([class*='iftar']),
+ #shisha:checked ~ .images > img:not([class*='shisha']),
+ #ancora:checked ~ .images > img:not([class*='ancora']),
+ #cock:checked ~ .images > img:not([class*='cock']),
+ #food:checked ~ .images > img:not([class*='food']){
+   width: 0px;
+   height: 0px;
+}
+
+#all:checked ~ .all,
+#drunch:checked ~ .tag1, 
+#interior:checked ~ .tag2,
+#iftar:checked ~ .tag3,
+#shisha:checked ~ .tag4,
+#ancora:checked ~ .tag5,
+#cock:checked ~ .tag6,
+#food:checked ~ .tag7{
+    /* background-color: #333333;       */
+    color: white;
+    border-bottom: 3px solid #0EE3C4;
+} 
+footer{
+    padding: 70px 0 0 0;
+    
+}
+footer h3{
+    font-family: 'Felix Titling';
+    font-size: 40px;
+    font-weight: 400;
+}
+footer h4{
+    font-size: 70px;
+}
+footer h5{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+footer p{
+    font-size: 18px;
+}
+footer form {
+    overflow: hidden;
+    height: 70px;
+  }
+  footer form input {
+    width: 100%;
+    float: left;
+    padding: 15px 20px;
+    text-align: left;
+    font-family: inherit;
+    font-size: 14px;
+    letter-spacing: 1px;
+    outline: 0;
+    background: #F2F1E3;
+  }
+  footer form input[type=email] {
+    border: 1px solid #bec1c5;
+  }
+
+  footer form button[type=submit] {
+    background-color: #243230;
+    color: #ffffff;
+    border: 1px solid #243230;
+    position: relative;
+    top: -58px;
+    left: 77%;
+    padding: 17px 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin-top: 20px;
+}
+footer ul li a{
+    background: #243230;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #243230;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+footer ul li a:hover{
+    background: #fff;
+    color: #243230;
+    border: 1px solid #243230;
+}
+.footer-bottom p{
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}  
+.footer-bottom ul{
+    font-size: 14px;
+    letter-spacing: 2px;
+    display: flex;
+    text-transform: uppercase;
+    padding-left: 0;
+    list-style: none;
+
+}  
+.footer-bottom ul li{
+    margin: 0 20px;
+}
+.footer-bottom ul li a{
+   text-decoration: none;
+   color: #000;
+}
+.product {
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;    
+}
+.product:hover {
+    width: 100%;
+}
+.product-text {
+    float: left;
+    width: 100%;
+    display: none;
+}
+.product:hover .product-text {
+    display: block;
+}
+
+  .hover-filled-slide-right {
+    position: relative;
+    border-color: #979695;
+    color: #979695;
+  }
+  .hover-filled-slide-right:hover {
+    transform: translateY(-0.25em);
+    border-color: #5e5e5e;
+    color: #5e5e5e;
+  }
+  .hover-filled-slide-right:hover::before {
+    opacity: 1;
+  }
+  .hover-filled-slide-right::before {
+    width: 100%;
+    height: 1em;
+    position: absolute;
+    left: 0;
+    bottom: -1.35em;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 80%);
+    opacity: 0;
+    transition: all 0.65s;
+    content: "";
+  }
+@media (max-width: 1280px) {
+    .gallery-section .tag{
+        letter-spacing: 1px;
+    }
+    .gallery-section img {
+        max-width: 300px;
+        width: 270px;
+        height: 270px;
+        transition: all .4s ease-in-out;
+        margin-bottom: 10px;
+    }
+} 
+@media (max-width: 768px) {
+    .abt-1 {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    .abt-2 {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .slider-section{
+        height: 100%;
+    }
+    .navbar-dark .navbar-toggler{
+        float: right;
+        border-color: transparent !important;
+    }
+    .reserve-table a {
+        font-size: 12px;
+    }
+    .reserve-table{
+        padding: 20px 6px;
+    }
+    .btn.reserve-button, .btn.read-more{
+        margin-bottom: 15px;
+    }
+    .navbar-brand {
+        font-size: 24px !important;
+        display: unset;
+    }
+    .navbar-nav {
+        background: #000;
+        width: 100%;
+    }
+    .slider-content h1 {
+        width: 100%;
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .abt-1 {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    .abt-2 {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        margin-bottom: 20px;
+    }
+    .about-section {
+        background: #FFFEF2;
+        padding: 50px 0 0 0;
+    }
+    .promotion-section h3 {
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%;
+        margin: 0 auto 30px;
+        letter-spacing: 5px;
+    }
+    .event-section h3 {
+        width: 100%;
+    }
+    .gallery-section .tag {
+        margin: 0px;
+        padding: 5px 8px;
+        font-size: 12px;
+        letter-spacing: 0px;
+    }
+    .gallery-section img {
+        width: 23%;
+        height: 75px;
+        margin-bottom: 10px;
+    }
+    .images{
+        margin-top: 20px;
+    }
+    .gallery-section img.float-end {
+        max-width: 150px;
+        width: 100px;
+        height: 60px;
+    }
+    footer form button[type=submit]{
+        left: 62%;
+    }
+    .footer-bottom ul li {
+        margin: 0px 5px;
+    }
+    .footer-bottom ul {
+        letter-spacing: 0.5px;
+    }
+    footer h4 {
+        font-size: 30px;
+    }
+    footer h3 {
+        font-size: 30px;
+    }
+}
